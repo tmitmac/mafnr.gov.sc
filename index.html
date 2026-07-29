@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<head>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+body{
+    font-family:'Open Sans',sans-serif;
+}
+
+.nav-link{
+    position:relative;
+    color:#374151;
+    font-weight:600;
+    font-size:15px;
+    text-decoration:none;
+    transition:.25s;
+    padding:32px 0;
+}
+
+.nav-link:hover{
+    color:#0d6b3b;
+}
+
+.nav-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:22px;
+    width:0;
+    height:3px;
+    background:#0d6b3b;
+    transition:.25s;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+</style>
+
+<nav class="bg-white shadow-sm border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-1">
+
+        <div class="flex items-center justify-between h-24">
+
+            <!-- Logo -->
+<a href="/" class="flex items-center">
+    <img src="images/mafnr-logo.png"
+         alt="Ministry of Agriculture, Fisheries, and Natural Resources"
+         class="h-20 w-auto">
+</a>
+
+            <!-- Navigation + Login -->
+            <div class="hidden lg:flex items-center gap-12">
+
+                <div class="flex items-center space-x-12">
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Agriculture</a>
+                    <a href="#" class="nav-link">Fisheries</a>
+                    <a href="#" class="nav-link">Natural Resources</a>
+                </div>
+
+                <a href="login.html"
+                class="bg-[#3b6254] hover:bg-green-800 text-white font-semibold px-5 py-2 rounded-lg transition duration-200 shadow-sm">
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative h-[650px] flex items-center overflow-hidden">
+
+    <!-- Background Image -->
+    <img src="images/pm-copy.png"
+         alt="Agriculture, Fisheries and Natural Resources"
+         class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/45"></div>
+
+    <!-- Optional Green Tint -->
+    <div class="absolute inset-0 bg-[#214d3b]/25"></div>
+
+    <!-- Content -->
+    <div class="relative max-w-7xl mx-auto px-6 w-full">
+
+        <div class="max-w-3xl">
+
+            <p class="uppercase tracking-[0.25em] text-green-200 font-semibold mb-4">
+                Square Country Government
+            </p>
+
+            <h1 class="text-6xl font-bold leading-tight mb-6 text-white">
+                Ministry of Agriculture,<br>
+                Fisheries and Natural Resources
+            </h1>
+
+            <p class="text-xl text-gray-100 leading-relaxed mb-10">
+                Supporting a productive agricultural sector, sustainable fisheries,
+                responsible natural resource management, and the long-term prosperity
+                of Square Country.
+            </p>
+
+            <div class="flex gap-4">
+                <a href="#"
+                   class="bg-white text-[#214d3b] font-semibold px-7 py-3 rounded-lg hover:bg-gray-100 transition">
+                    Our Services
+                </a>
+
+                <a href="#"
+                   class="border border-white text-white font-semibold px-7 py-3 rounded-lg hover:bg-white hover:text-[#214d3b] transition">
+                    Latest News
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Quick Links -->
+<section class="bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-6">
+
+        <div class="grid md:grid-cols-4 gap-6 text-center">
+
+            <a href="#" class="p-5 rounded-lg hover:bg-gray-50 transition">
+                <h3 class="font-semibold text-gray-900">Licences</h3>
+                <p class="text-sm text-gray-500 mt-1">
+                    Apply and renew permits.
+                </p>
+            </a>
+
+            <a href="#" class="p-5 rounded-lg hover:bg-gray-50 transition">
+                <h3 class="font-semibold text-gray-900">Farming</h3>
+                <p class="text-sm text-gray-500 mt-1">
+                    Information on agriculture and sustainable farming.
+                </p>
+            </a>
+
+            <a href="#" class="p-5 rounded-lg hover:bg-gray-50 transition">
+                <h3 class="font-semibold text-gray-900">Fishing</h3>
+                <p class="text-sm text-gray-500 mt-1">
+                    Commercial and recreational information.
+                </p>
+            </a>
+
+            <a href="#" class="p-5 rounded-lg hover:bg-gray-50 transition">
+                <h3 class="font-semibold text-gray-900">Natural Resources</h3>
+                <p class="text-sm text-gray-500 mt-1">
+                    Forestry, mining, and land management.
+                </p>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Featured -->
+<section class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">
+                Featured Services
+            </h2>
+
+            <p class="text-gray-600 mt-2">
+                Access the ministry's most frequently used online services.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 hover:shadow-lg transition">
+                <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mb-6">
+                    
+                </div>
+
+                <h3 class="text-xl font-bold mb-3">
+                    Agriculture
+                </h3>
+
+                <p class="text-gray-600 mb-6">
+                    Information for farmers, growers, producers, and agricultural businesses.
+                </p>
+
+                <a href="#" class="text-[#3b6254] font-semibold hover:underline">
+                    Learn more →
+                </a>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 hover:shadow-lg transition">
+                <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                    
+                </div>
+
+                <h3 class="text-xl font-bold mb-3">
+                    Fisheries
+                </h3>
+
+                <p class="text-gray-600 mb-6">
+                    Licences, quotas, sustainable fisheries management and marine resources.
+                </p>
+
+                <a href="#" class="text-[#3b6254] font-semibold hover:underline">
+                    Learn more →
+                </a>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 hover:shadow-lg transition">
+                <div class="w-14 h-14 rounded-full bg-emerald-100 flex items-center justify-center mb-6">
+                    
+                </div>
+
+                <h3 class="text-xl font-bold mb-3">
+                    Natural Resources
+                </h3>
+
+                <p class="text-gray-600 mb-6">
+                    Protecting forests, waterways, biodiversity and public lands.
+                </p>
+
+                <a href="#" class="text-[#3b6254] font-semibold hover:underline">
+                    Learn more →
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
