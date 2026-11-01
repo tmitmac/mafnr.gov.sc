@@ -1,0 +1,35 @@
+/* Sprout: self-contained ministry help assistant */
+.sprout-root{font-family:'Open Sans',system-ui,sans-serif;--sprout-green:#174b36;--sprout-light:#eaf5ed;position:fixed;z-index:9998;right:22px;bottom:22px;color:#1f332a}
+.sprout-root *{box-sizing:border-box}
+.sprout-launch{border:0;background:var(--sprout-green);color:#fff;border-radius:999px;display:flex;align-items:center;gap:12px;box-shadow:0 12px 35px #092a1d3d;padding:11px 18px 11px 11px;cursor:pointer;font:700 14px 'Open Sans',sans-serif;transition:transform .2s,background .2s}
+.sprout-launch:hover{transform:translateY(-3px);background:#216949}
+.sprout-launch:focus-visible,.sprout-root button:focus-visible,.sprout-root input:focus-visible,.sprout-root a:focus-visible{outline:3px solid #e6ad38;outline-offset:3px}
+.sprout-launch-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#dbf2df;color:var(--sprout-green);font-size:23px}
+.sprout-launch small{display:block;font-size:11px;font-weight:500;opacity:.83;text-align:left}
+.sprout-window{position:absolute;bottom:76px;right:0;width:min(390px,calc(100vw - 28px));height:min(590px,calc(100dvh - 115px));min-height:320px;border:1px solid #d5e4d9;border-radius:21px;box-shadow:0 22px 80px #0d2b1d42;background:#fff;display:flex;flex-direction:column;overflow:hidden}
+.sprout-window[hidden]{display:none}
+.sprout-header{background:linear-gradient(125deg,#174b36,#2e6a51);color:#fff;padding:17px 16px 15px;display:flex;gap:10px;align-items:center}
+.sprout-avatar{display:grid;place-items:center;border-radius:15px;background:#dff4e2;color:#125333;width:46px;height:46px;flex-shrink:0;font-size:25px}
+.sprout-header-copy{flex:1;min-width:0}
+.sprout-header-copy strong{display:block;font-size:17px;line-height:1.2}
+.sprout-header-copy span{display:block;margin-top:4px;font-size:11px;opacity:.9;line-height:1.4}
+.sprout-close{background:#ffffff1c;border:0;color:white;cursor:pointer;width:33px;height:33px;border-radius:10px;font-size:23px;line-height:1}
+.sprout-messages{background:linear-gradient(#f7faf8,#fff);flex:1;overflow-y:auto;padding:16px 14px;display:flex;flex-direction:column;gap:11px;scroll-behavior:smooth;overscroll-behavior:contain}
+.sprout-message{max-width:92%;font-size:12.5px;line-height:1.6;border-radius:15px;padding:10px 13px;overflow-wrap:anywhere}
+.sprout-message.bot{background:#fff;border:1px solid #dfeae1;border-bottom-left-radius:4px;align-self:flex-start;box-shadow:0 2px 7px #193c2508}
+.sprout-message.user{background:#215941;color:white;align-self:flex-end;border-bottom-right-radius:4px}
+.sprout-message p{margin:0 0 7px}
+.sprout-message p:last-child{margin-bottom:0}
+.sprout-message a{color:#125f43;text-decoration:underline;font-weight:700}
+.sprout-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.sprout-actions button{border:1px solid #aacbb7;background:#eef7f0;color:#155139;font:600 11px 'Open Sans',sans-serif;padding:7px 10px;border-radius:999px;cursor:pointer;text-align:left}
+.sprout-actions button:hover{background:#d6eddb}
+.sprout-foot{background:white;border-top:1px solid #e7eee8;padding:10px 12px 11px}
+.sprout-form{display:flex;align-items:center;gap:7px}
+.sprout-form input{border:1px solid #ccdcd0;border-radius:12px;padding:11px 12px;flex:1;min-width:0;font:12px 'Open Sans',sans-serif;outline:none}
+.sprout-form input:focus{border-color:#2a7651}
+.sprout-send{width:41px;height:41px;border-radius:12px;background:var(--sprout-green);color:white;border:0;cursor:pointer;font-size:19px}
+.sprout-disclaimer{display:block;font-size:10px;color:#6b7770;text-align:center;padding-top:8px;line-height:1.4}
+.sprout-mobile-nudge{position:absolute;right:0;bottom:74px;background:#fff;border:1px solid #d9e6da;border-radius:12px;box-shadow:0 8px 20px #0002;padding:10px 15px;font-size:12px;white-space:nowrap}
+@media(max-width:520px){.sprout-root{right:12px;bottom:12px}.sprout-window{position:fixed;bottom:0;right:0;width:100vw;height:min(680px,94dvh);border-radius:20px 20px 0 0;min-height:0}.sprout-launch{padding:9px 13px 9px 9px}.sprout-launch-icon{width:36px;height:36px}}
+@media(prefers-reduced-motion:reduce){.sprout-root *{scroll-behavior:auto;transition:none!important}}
